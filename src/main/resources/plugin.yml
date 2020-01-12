@@ -1,0 +1,18 @@
+main: org.makershaven.ranktoggle.RankToggle
+api-version: "1.15"
+version: "${project.version}"
+name: "RankToggle"
+author: "Weaves"
+softdepend: [LuckPerms, PermissionsEx]
+description: Lets players turn a rank on and off. Mostly so a staff member can turn off their staff rank and play like normal. All ranks based on permissions.
+commands:
+  rankon:
+    description: Lets a player toggle a rank on.
+    usage: /<command> <rank>
+    aliases: ron
+    permission: ranktoggle.use
+  rankoff:
+    description: Lets a player toggle a rank off.
+    usage: /<command> <rank>
+    aliases: roff
+    permission: ranktoggle.use
